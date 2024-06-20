@@ -7,7 +7,7 @@ const Index = () => {
       <VStack spacing={6}>
         <Heading as="h1" size="2xl">Welcome to My Blog</Heading>
         <Box boxSize="150px">
-          <Image src="/path/to/your/profile-pic.jpg" alt="Profile Picture" borderRadius="full" />
+          <Image src="/images/profile-pic.jpg" alt="Profile Picture" borderRadius="full" />
         </Box>
         <Text fontSize="lg" textAlign="center">
           Hi, I'm [Your Name], a passionate blogger who loves to write about technology, programming, and personal development.

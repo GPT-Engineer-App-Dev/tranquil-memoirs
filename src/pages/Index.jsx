@@ -1,17 +1,28 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, Text, VStack, Heading, Box, Image, Link } from "@chakra-ui/react";
+import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Index = () => {
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+      <VStack spacing={6}>
+        <Heading as="h1" size="2xl">Welcome to My Blog</Heading>
+        <Box boxSize="150px">
+          <Image src="/path/to/your/profile-pic.jpg" alt="Profile Picture" borderRadius="full" />
+        </Box>
+        <Text fontSize="lg" textAlign="center">
+          Hi, I'm [Your Name], a passionate blogger who loves to write about technology, programming, and personal development.
+        </Text>
+        <VStack spacing={4}>
+          <Link href="https://twitter.com/yourprofile" isExternal>
+            <FaTwitter size="30px" />
+          </Link>
+          <Link href="https://github.com/yourprofile" isExternal>
+            <FaGithub size="30px" />
+          </Link>
+          <Link href="https://linkedin.com/in/yourprofile" isExternal>
+            <FaLinkedin size="30px" />
+          </Link>
+        </VStack>
       </VStack>
     </Container>
   );
